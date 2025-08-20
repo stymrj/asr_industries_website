@@ -1,0 +1,147 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #004080;
+  color: white;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+header .container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Hero Section */
+.hero {
+  background: url('../images/hero.jpg') no-repeat center center/cover;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: rgb(17, 16, 16);
+}
+.hero-text h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+.btn {
+  background: #ffcc00;
+  color: #004080;
+  padding: 12px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #e6b800;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+section .container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Services */
+.services-grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.service-card {
+  flex: 1 1 30%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Contact Form */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  padding: 12px 25px;
+  background: #004080;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+form button:hover {
+  background: #003366;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+  }
+  .hero-text h2 {
+    font-size: 2rem;
+  }
+}
